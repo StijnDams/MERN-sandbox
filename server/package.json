@@ -1,0 +1,20 @@
+{
+  "name": "mern-sandbox-server",
+  "version": "1.0.0",
+  "description": "The server side of my project to serve as a playground for learning new concepts about the MERN (MongoDB, Express, React and Node) stack.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Stijn Dams",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^5.0.0",
+    "nodemon": "^1.19.4"
+  },
+  "dependencies": {
+    "config": "^3.2.4",
+    "express": "^4.17.1",
+    "mongoose": "^5.7.10"
+  }
+}
