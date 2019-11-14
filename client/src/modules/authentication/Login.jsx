@@ -65,7 +65,6 @@ const Login = () => {
 
   return (
     <div className="content-container">
-      {console.log("render")}
       <div className="signup-form-container">
         <h1>Log in</h1>
 

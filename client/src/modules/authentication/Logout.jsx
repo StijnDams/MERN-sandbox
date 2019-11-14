@@ -9,7 +9,6 @@ const Logout = () => {
   dispatch(logoutUser());
 
   localStorage.removeItem("authToken");
-  console.log(localStorage.getItem("authToken"));
   return <Redirect to="/home" />;
 };
 

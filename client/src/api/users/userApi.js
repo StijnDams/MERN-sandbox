@@ -3,7 +3,6 @@ import api from "../api";
 async function postReqWithErrorHandling(endpoint, body) {
   const errors = [];
 
-  console.log(body);
   const result = await api.post(endpoint, body).catch(err => {
     errors.push(...err.response.data.errors);
   });
