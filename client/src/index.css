@@ -1,6 +1,11 @@
 @font-face {
-  font-family: "Mosk";
+  font-family: "Mosk 900";
   src: url("./public/fonts/Mosk Ultra-Bold 900.ttf");
+}
+
+@font-face {
+  font-family: "Mosk 500";
+  src: url("./public/fonts/Mosk Medium 500.ttf");
 }
 
 body {

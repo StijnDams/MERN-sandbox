@@ -26,16 +26,10 @@ const server = app.listen(PORT, () => console.log(`Server started on ${PORT}`));
 // Set up websocket
 var io = require("socket.io")(server);
 
-io.origins((origin, callback) => {
-  if (origin !== "http://localhost:8080") {
-    return callback("origin not allowed", false);
-  }
-  callback(null, true);
-});
-
 // Set up websocket events
 io.on("connection", function(socket) {
   socket.on("message", message => {
     console.log(message);
+    io.emit("message", message);
   });
 });

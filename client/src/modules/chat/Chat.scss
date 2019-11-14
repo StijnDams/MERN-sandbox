@@ -28,6 +28,8 @@
 }
 
 .chatroom-user {
+  font-family: "Mosk 500";
+  font-weight: 500;
   grid-column: 1;
   grid-row: 1;
   display: flex;
@@ -53,6 +55,14 @@
 .chatroom-name {
   grid-column: 2;
   grid-row: 1;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: "Mosk 900";
+  font-size: 25px;
+  color: #f6ad7b;
 }
 
 .chatroom-content {
@@ -61,6 +71,8 @@
 
   display: grid;
   grid-template-rows: 95% 1fr;
+
+  background: #fffafa;
 
   .chatbar {
     display: grid;
