@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Mosk";
+  src: url("./public/fonts/Mosk Ultra-Bold 900.ttf");
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -10,4 +15,16 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  background-color: #c2e8ce;
+  color: #5f6769;
+  font-family: "Nunito", sans-serif;
 }
