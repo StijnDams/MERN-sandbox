@@ -18,6 +18,10 @@ router.post(
     check("username", "Username is required.")
       .not()
       .isEmpty(),
+    check(
+      "username",
+      "Username must consist of 13 characters or less."
+    ).isLength({ max: 13 }),
     check("email", "Please include a valid email.").isEmail(),
     check(
       "password",
